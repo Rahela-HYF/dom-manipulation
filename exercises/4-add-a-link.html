@@ -40,6 +40,16 @@
       <script id='DOM manipulation script'>
         debugger;
        // write me! (... without using cloneNode, that's kind of cheating)
+      
+       const addLink =document.createElement('A');
+       //const linkText= addLink.children[1];
+       addLink.target="_blank";
+       addLink.href="https://www.youtube.com/watch?v=0ik6X4DJKCc";
+       addLink.innerText="Mr. Traversy does it again!";
+
+       document.getElementById('replication').appendChild(addLink);
+
+
       </script>
 
     </div>

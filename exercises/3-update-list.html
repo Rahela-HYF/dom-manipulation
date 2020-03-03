@@ -48,6 +48,22 @@
       <script id='DOM manipulation script'>
         debugger;
         // write me! (... without using cloneNode, that's kind of cheating)
+       /*const text = document.getElementById('h1');
+       text.innerHTML=("a list of things robots solar systems oil");
+        const replication = document.getElementById('replication');
+       const ulEl = replication.children[0];
+
+       const things = ['robots', 'solar systems', 'oil'];
+       things.forEach((thing, index) => {
+         ulEl.children[index].innerHTML = things;
+       })*/
+
+       const updateList=document.getElementById('replication');
+       const textChange=updateList.children[1].children[0];
+       textChange.innerText="robots";
+
+
+
       </script>
 
     </div>

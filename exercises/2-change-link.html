@@ -33,13 +33,26 @@
       </div>
 
       <div id='replication'>
-        <a href='https://www.badgerbadgerbadger.com' target="blank">learn about pigs</a>
+        <a href='https://www.badgerbadgerbadger.com' target="_blank">learn about pigs</a>
       </div>
 
       <script id='DOM manipulation script'>
         debugger;
-        // write me! (... without using cloneNode, that's kind of cheating)
-      </script>
+       
+       
+   // write me! (... without using cloneNode, that's kind of cheating)
+
+   var replicaId = document.getElementById('replication');
+   var linkText=replicaId.children[0];
+   linkText.innerText = "learn about badgers";
+
+   
+      //replica.href ="https://www.badgerbadgerbadger.com";
+   //var textLink = replica.children[0];
+
+   //document.getElementById('replication').children[0].innerHTML='newTexb';
+   
+         </script>
 
     </div>
 

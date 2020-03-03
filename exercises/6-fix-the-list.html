@@ -48,6 +48,31 @@
       <script id='DOM manipulation script'>
         debugger;
         // write me! (... without using cloneNode, that's kind of cheating)
+
+        const listFix =document.getElementById('replication');
+        const listT =document.getElementById('target');
+        const holder = listFix.children[0];
+        //const holder2 = listFix.children[0].children[1];
+        const header=document.createElement('h1');
+        header.innerText="a list of things";
+        
+      
+        listFix.insertBefore(header, holder);
+       
+
+     
+       const orderHolder=listFix.children[1];
+       //orderHolder.nodeName="ul";
+      
+      
+        listFix.children[1].children[1].innerText="solar systems";
+        const addtional = listFix.children[1].children[3];
+        holder.removeChild(addtional);
+
+        const listNodeName = document.createElement('ul');
+        listFix.replaceChild(listNodeName, holder);
+       listFix.children[1].innerHTML = listT.children[1].innerHTML;
+      
       </script>
 
     </div>

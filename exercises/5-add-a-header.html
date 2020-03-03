@@ -47,6 +47,17 @@
       <script id='DOM manipulation script'>
         debugger;
         // write me! (... without using cloneNode, that's kind of cheating)
+        const finder=document.getElementById('replication');
+        const holder=finder.children[0];
+        const header=document.createElement('h1');
+       
+        header.innerText="a list of things";
+        finder.insertBefore(header, holder);
+        finder.children[1].children[1].innerText="solar systems";
+
+       // document.getElementById('replication').appendChild(header);
+
+
       </script>
 
     </div>

@@ -32,12 +32,24 @@
       </div>
 
       <div id='replication'>
-        <h1>bye!</h1>
+       <h1>bye!</h1>
       </div>
 
       <script id='DOM manipulation script'>
         debugger;
         // write me! (... without using cloneNode, that's kind of cheating)
+      const newTextEl = document.createElement('replication');
+     // const textRefer = newTextEl.children[0];
+      //textRefer.innerText = 'hi!';
+
+     // const finalEl = document.createElement('details');
+     // finalEl.appendChild(newTextEl);
+
+      //document.getElementById('replication').children[0].innerHTML(newTextEl);
+     // document.getElementById('replication').innerHTML='<h1>hi!</h1>'
+      document.getElementById('replication').children[0].innerHTML = "hi!"
+      //document.getElementById('replication').innerHTML = '<h1>hi!</h1>';
+
       </script>
 
     </div>
